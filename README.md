@@ -8,7 +8,10 @@ With Jenkins_old file you can build and push an app image, push it into docker h
 Jenkinsfile file have same instructions but with "push to release brunch" condition.
 
 The Hello_world.xml file is the export of the Jenkins multiline pipline, to import it use following command:
-'java -jar jenkins-cli.jar -s http://localhost:9090 create-job main < Helo_world.xml'
+'''
+java -jar jenkins-cli.jar -s http://localhost:9090 create-job main < Helo_world.xml
+'''
+
 _Note_: Replace *http://localhost:9090* with your Jenkins client URL
 
 
