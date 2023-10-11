@@ -12,7 +12,7 @@ pipeline {
         branch 'release'  
       }
       steps {
-        sh 'docker build -t artsemyeuroman/trgtest:hello_world .'
+        sh 'docker build -t artsemyeuroman/helloworld:v1 .'
       }
     }
     stage('Login') {
@@ -28,7 +28,7 @@ pipeline {
         branch 'release'  
       }
       steps {
-        sh 'docker push artsemyeuroman/trgtest:hello_world'
+        sh 'docker push artsemyeuroman/helloworld:v1'
       }
     }
     stage('Deploy') {
@@ -36,7 +36,7 @@ pipeline {
         branch 'release'
       }
       steps {
-        sh 'docker pull artsemyeuroman/trgtest:hello_world'
+        sh 'docker pull artsemyeuroman/helloworld:v1'
         sh 'docker-compose up -d'
       }
     }
