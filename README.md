@@ -3,6 +3,6 @@ Here is the project, that  create and push a docker image of simple "Hello_world
 
 In branch **main** there is a **jenkins** folder with Dockerfile, which create an image with Jenkins, docker and docker-compose.
 
-with Jenkins_old file you can build and push an app image, push it into docker hub repository and, using docker-compose.yml file deploy the application by pulling created image from docker-hub (from **main** brunch).
+With Jenkins_old file you can build and push an app image, push it into docker hub repository and, using docker-compose.yml file deploy the application by pulling created image from docker-hub (from **main** brunch).
 
 Jenkinsfile file have same instructions but with "push to release brunch" condition.
