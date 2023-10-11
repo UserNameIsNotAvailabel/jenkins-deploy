@@ -2,7 +2,7 @@ version: "3"
 
 services:
   python_app:
-    image: artsemyeuroman/trgtest:hello_world
+    image: artsemyeuroman/helloworld:v1
     ports:
       - 8080:8080
 
