@@ -36,7 +36,7 @@ pipeline {
         branch 'release'
       }
       steps {
-        sh 'docker pull artsemyeuroman/trgtes:hello_world'
+        sh 'docker pull artsemyeuroman/trgtest:hello_world'
         sh 'docker-compose up -d'
       }
     }
