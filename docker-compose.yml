@@ -5,6 +5,9 @@ services:
     image: artsemyeuroman/helloworld:v1
     ports:
       - 8080:8080
+    networks:
+      - backend
+
 
   nginx-proxy:
     image: nginx
@@ -14,4 +17,10 @@ services:
       -  /etc/nginx/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
       - python_app
+    networks:
+      - backend
+
+networks:
+  backend:
+
 
